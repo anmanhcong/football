@@ -18,17 +18,23 @@ class MatchController extends Controller
     public function getMatches()
     {
         $data = Match::all();
-        $result = [];
+        $listLeague = [];
         foreach ($data as $datum) {
-            if (empty($result)) $result[$datum['league']][] = $datum;
-            foreach ($result as $key => $value) {
-                if ($key == $datum['league']) {
-                    $result[$datum['league']][] = $datum;
-                } else {
-                    $result[$datum['league']][] = $datum;
+            if (in_array($datum['league'], $listLeague)) continue;
+            $listLeague[] = $datum['league'];
+        }
+        $result = [];
+        foreach ($listLeague as $league) {
+            $tmp = [
+                'league' => $league,
+                'matches' => []
+            ];
+            foreach ($data as $datum) {
+                if ($league == $datum['league']) {
+                    $tmp['matches'][] = $datum;
                 }
-                break;
             }
+            $result[] = $tmp;
         }
         return json_encode([
             'success' => true,
