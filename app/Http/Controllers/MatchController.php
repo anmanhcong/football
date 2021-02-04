@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\DomCrawler\Crawler;
 use Goutte\Client;
+use App\Services\Firebase;
 
 class MatchController extends Controller
 {

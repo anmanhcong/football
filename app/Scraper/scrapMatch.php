@@ -7,6 +7,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Symfony\Component\DomCrawler\Crawler;
 use Goutte\Client;
+use App\Services\Firebase;
+use function Psy\debug;
+
 
 class scrapMatch
 {
@@ -33,6 +36,27 @@ class scrapMatch
                 $match->save();
             }
         );
+        $data = Match::all();
+        $listLeague = [];
+        foreach ($data as $datum) {
+            if (in_array($datum['league'], $listLeague)) continue;
+            $listLeague[] = $datum['league'];
+        }
+        $result = [];
+        foreach ($listLeague as $league) {
+            $tmp = [
+                'league' => $league,
+                'matches' => []
+            ];
+            foreach ($data as $datum) {
+                if ($league == $datum['league']) {
+                    $tmp['matches'][] = $datum;
+                }
+            }
+            $result[] = $tmp;
+        }
+        (new Firebase())->saveData($result);
+
         return 0;
     }
 }

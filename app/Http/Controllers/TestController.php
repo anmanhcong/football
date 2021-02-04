@@ -24,10 +24,5 @@ class TestController extends Controller
                 echo $name;
             }
         );
-//        dd($crawler);
-
-//        $client = new Client();
-//        $crawler = $client->request('GET', 'http://thuckhuya.tv/wp-admin/admin-ajax.php?action=filter_match&filter=hot');
-//        dd($crawler);
     }
 }
