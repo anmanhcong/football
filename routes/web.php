@@ -18,3 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get('/getMatches', [\App\Http\Controllers\MatchController::class, 'getMatches']);
+
+Route::get('/test',[\App\Http\Controllers\FirebaseController::class, 'index']);
