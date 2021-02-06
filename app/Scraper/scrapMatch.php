@@ -37,23 +37,15 @@ class scrapMatch
             }
         );
         $data = Match::all();
-        $listLeague = [];
-        foreach ($data as $datum) {
-            if (in_array($datum['league'], $listLeague)) continue;
-            $listLeague[] = $datum['league'];
-        }
         $result = [];
-        foreach ($listLeague as $league) {
-            $tmp = [
-                'league' => $league,
-                'matches' => []
+        foreach ($data as $datum) {
+            $result[] = [
+                'id' => $datum['id'],
+                'homeTeamName' => $datum['home_team'],
+                'awayTeamName' => $datum['away_team'],
+                'matchTime' => $datum['time'],
+                'videoLinks' => [],
             ];
-            foreach ($data as $datum) {
-                if ($league == $datum['league']) {
-                    $tmp['matches'][] = $datum;
-                }
-            }
-            $result[] = $tmp;
         }
         (new Firebase())->saveData($result);
 
