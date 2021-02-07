@@ -39,7 +39,7 @@ class scrapMatch
         $data = Match::all();
         $result = [];
         foreach ($data as $datum) {
-            $result[] = [
+            $result[$datum['id']] = [
                 'id' => $datum['id'],
                 'homeTeamName' => $datum['home_team'],
                 'awayTeamName' => $datum['away_team'],
