@@ -26,11 +26,14 @@ class MatchController extends Controller
         $result = [];
         foreach ($listLeague as $league) {
             $tmp = [
-                'league' => $league,
+                'league' => $league == 'Ngoại Hạng Anh' ? 'Premier League' : $league,
                 'matches' => []
             ];
             foreach ($data as $datum) {
                 if ($league == $datum['league']) {
+                    if ($datum['league'] == 'Ngoại Hạng Anh') {
+                        $datum['league'] = 'Premier League';
+                    }
                     $tmp['matches'][] = $datum;
                 }
             }
