@@ -25,7 +25,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-         $schedule->command('scrap:scrapMatch')->everyMinute();;
+         $schedule->command('scrap:scrapMatch')->twiceDaily(6, 18);
     }
 
     /**
