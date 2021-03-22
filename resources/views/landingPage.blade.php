@@ -17,7 +17,7 @@
 
 </head>
 <body class="layout-wrapper ">
-    <div class="container">
+    <div class="container-fluid">
        <div class="wrapper">
            <div class="page-left">
                <div class="logo">
@@ -26,41 +26,44 @@
                </div>
                <div class="ball">
                    <div class="ball-line">
-                       <img src="http://livefootball.top/static/media/image/ball.png" class="google-play">
+                       <img src="http://livefootball.top/static/media/image/ball.png" class="ball-img">
                        <span class="ball-text">GOAL ALERTS</span>
                    </div>
                    <div class="ball-line">
-                       <img src="http://livefootball.top/static/media/image/ball.png" class="google-play">
+                       <img src="http://livefootball.top/static/media/image/ball.png" class="ball-img">
                        <span class="ball-text">MATCH STATISTICS</span>
                    </div>
                    <div class="ball-line">
-                       <img src="http://livefootball.top/static/media/image/ball.png" class="google-play">
+                       <img src="http://livefootball.top/static/media/image/ball.png" class="ball-img">
                        <span class="ball-text"> HEAD-TO-HEAD DATA</span>
                    </div>
                    <div class="ball-line">
-                       <img src="http://livefootball.top/static/media/image/ball.png" class="google-play">
+                       <img src="http://livefootball.top/static/media/image/ball.png" class="ball-img">
                        <span class="ball-text">LIVE LEAGUE TABLES</span>
                    </div>
                    <div class="ball-line">
-                       <img src="http://livefootball.top/static/media/image/ball.png" class="google-play">
+                       <img src="http://livefootball.top/static/media/image/ball.png" class="ball-img">
                        <span class="ball-text">BREAKING NEWS</span>
                    </div>
                    <div class="ball-line">
-                       <img src="http://livefootball.top/static/media/image/ball.png" class="google-play">
+                       <img src="http://livefootball.top/static/media/image/ball.png" class="ball-img">
                        <span class="ball-text">DOWNLOAD WALLPAPERS</span>
                    </div>
                </div>
            </div>
            <div class="right position-relative">
                <div class="store">
-
-                   <img src="http://livefootball.top/static/media/image/google.png" class="google-play">
-                   <img src="http://livefootball.top/static/media/image/app_store.png" class="app_store">
+                   <a href="https://play.google.com/store/apps/details?id=com.livefootball.realtime"  target="_blank"  class="google-play">
+                       <img src="http://livefootball.top/static/media/image/google_play.png" alt="google-play" class="google-play-img">
+                   </a>
+                   <a href="https://apps.apple.com/vn/app/livescore-football-tv/id1537080651?l=vi"  target="_blank" class="app-store">
+                       <img src="http://livefootball.top/static/media/image/app_store.png" alt="app-store" class="app-store-img">
+                   </a>
                </div>
               <div class="device">
-                  <img src="http://livefootball.top/static/media/image/team.png" class="team">
+                  <img src="http://livefootball.top/static/media/image/tablet.png" class="tablet">
                   <img src="http://livefootball.top/static/media/image/mobile.png" class="mobile">
-                  <img src="http://livefootball.top/static/media/image/shoot.png" class="shoot">
+                  <img src="http://livefootball.top/static/media/image/laptop.png" class="lap-top">
               </div>
            </div>
        </div>

@@ -1,5 +1,5 @@
 .layout-wrapper {
-    background-image: url("../media/image/background.png") ;
+    background-image: url("../image/background.png") ;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 100% 100%;
@@ -16,21 +16,21 @@
 }
 
 .logo {
-    height: 50vh;
+    height: 48vh;
 }
 
 .logo-live {
     font-family: 'Bangers', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 180px;
+    font-size: 210px;
     line-height: 130%;
     text-transform: uppercase;
-    color: #F98700;
+    color: rgba(249, 135, 0, 1);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
-    top: 6%;
-    left: 16%;
+    top: 3%;
+    left: 25%;
 }
 .logo-football {
     font-family: 'Bangers', cursive;
@@ -38,73 +38,241 @@
     height: 143px;
     font-style: normal;
     font-weight: normal;
-    font-size: 110px;
+    font-size: 130px;
     line-height: 130%;
     text-transform: uppercase;
-    color: #F98700;
+    color: rgba(249, 135, 0, 1);
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     position: absolute;
     top: 30%;
-    left: 30%;
+    left: 38%;
 }
 
 .ball {
-    height: 50vh;
-    padding-left: 17%;
+    height: 52vh;
+    padding-left: 24%;
 }
 
 .ball-line {
-    padding: 4% 0;
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
 }
 
 .ball-text {
     font-family: 'Bangers', cursive;
     font-style: normal;
     font-weight: normal;
-    font-size: 24px;
+    font-size: 32px;
     line-height: 130%;
     text-transform: uppercase;
-
     color: #FFFFFF;
 }
 
 .store {
+    position: relative;
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 26%;
 }
 
+.ball-img {
+    margin-right: 13%;
+    cursor: pointer;
+}
+
 .google-play {
-    margin-right: 5%;
-    cursor: pointer;
-}
-
-.app_store {
-    cursor: pointer;
-}
-
-.team {
     position: absolute;
-    top: 50%;
-    left: 5%;
+    right: 42%;
+    cursor: pointer;
+}
+
+.app-store {
+    position: absolute;
+    right: 13%;
+    cursor: pointer;
+}
+
+.tablet {
+    position: absolute;
+    top: 52%;
+    left: 15%;
     z-index: 10;
 }
 
 .mobile {
     position: absolute;
     top: 62%;
-    left: 32%;
+    left: 37%;
     z-index: 100
 }
 
-.shoot {
+.lap-top {
     position: absolute;
-    right: 0;
+    right: 6%;
 }
 
-@media only screen and (min-width: 1500px) {
-    .container-xl, .container-lg, .container-md, .container-sm, .container {
-        max-width: 1464px !important;
+@media only screen and (max-width: 1400px) {
+    .layout-wrapper {
+        background-image: url("../image/backgroun_1368.png") ;
+    }
+
+    .logo-live {
+        font-size: 130px;
+        position: absolute;
+        top: 5%;
+        left: 18%;
+    }
+
+    .logo-football {
+        font-family: 'Bangers', cursive;
+        font-size: 80px;
+        line-height: 130%;
+        position: absolute;
+        top: 26%;
+        left: 33%;
+    }
+    .logo {
+        height: 44vh;
+    }
+
+    .ball {
+        height: 56vh;
+        padding-left: 18%;
+    }
+
+    .ball-line {
+        padding: 4% 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .ball-img {
+        width: 18px;
+    }
+
+
+    .ball-text {
+        font-family: 'Bangers', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .google-play-img {
+        width: 183px;
+    }
+    .app-store-img {
+        width: 173px;
+    }
+
+    .store {
+        height: 36%;
+    }
+    .app-store {
+        top: 25%;
+    }
+    .google-play {
+        top: 20%;
+    }
+    .lap-top {
+        width: 619px;
+        right: 0;
+    }
+    .tablet {
+        width: 176px;
+        top: 60%;
+        left: 25%;
+    }
+    .mobile {
+        width: 69px;
+        top: 74.5%;
+        left: 45%;
     }
 }
+
+@media only screen and (max-width: 1300px) {
+    .layout-wrapper {
+        background-image: url("../image/backgroun_1368.png") ;
+    }
+
+    .logo-live {
+        font-size: 150px;
+        position: absolute;
+        top: 4%;
+        left: 18%;
+    }
+
+    .logo-football {
+        font-family: 'Bangers', cursive;
+        font-size: 100px;
+        line-height: 130%;
+        position: absolute;
+        top: 28%;
+        left: 33%;
+    }
+    .logo {
+        height: 48vh;
+    }
+
+    .ball {
+        height: 52vh;
+        padding-left: 18%;
+    }
+
+    .ball-line {
+        padding: 4% 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .ball-img {
+        width: 18px;
+    }
+
+
+    .ball-text {
+        font-family: 'Bangers', cursive;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+
+    .google-play-img {
+        width: 183px;
+    }
+    .app-store-img {
+        width: 173px;
+    }
+
+    .store {
+        height: 38%;
+    }
+    .app-store {
+        top: 27%;
+    }
+    .google-play {
+        top: 23%;
+    }
+    .lap-top {
+        width: 619px;
+        right: 0;
+    }
+    .tablet {
+        width: 176px;
+        top: 60%;
+        left: 15%;
+    }
+    .mobile {
+        width: 69px;
+        top: 74.5%;
+        left: 37%;
+    }
+}
+
