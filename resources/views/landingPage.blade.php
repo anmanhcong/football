@@ -53,7 +53,7 @@
            </div>
            <div class="right position-relative">
                <div class="store">
-                   <a href="https://play.google.com/store/apps/details?id=com.livefootball.realtime"  target="_blank"  class="google-play">
+                   <a href="https://play.google.com/store/apps/details?id=com.livesoccer.sports.bet"  target="_blank"  class="google-play">
                        <img src="http://livefootball.top/static/media/image/google_play.png" alt="google-play" class="google-play-img">
                    </a>
                    <a href="https://apps.apple.com/vn/app/livescore-football-tv/id1537080651?l=vi"  target="_blank" class="app-store">
